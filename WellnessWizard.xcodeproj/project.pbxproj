@@ -11,6 +11,10 @@
 		3B45D2A02A65BF7200DF6D55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B45D29F2A65BF7200DF6D55 /* ContentView.swift */; };
 		3B45D2A22A65BF7600DF6D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B45D2A12A65BF7600DF6D55 /* Assets.xcassets */; };
 		3B45D2A52A65BF7600DF6D55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B45D2A42A65BF7600DF6D55 /* Preview Assets.xcassets */; };
+		3B47E3852A68272200C0B0B5 /* Emergency Medicine Location View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47E3842A68272200C0B0B5 /* Emergency Medicine Location View.swift */; };
+		3B47E3872A68273900C0B0B5 /* Anaphylaxis Procedure View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47E3862A68273900C0B0B5 /* Anaphylaxis Procedure View.swift */; };
+		3B47E3892A68274F00C0B0B5 /* Asthma Attack Procedure View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47E3882A68274F00C0B0B5 /* Asthma Attack Procedure View.swift */; };
+		3B47E38B2A68275B00C0B0B5 /* Virus Information View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47E38A2A68275B00C0B0B5 /* Virus Information View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		3B45D29F2A65BF7200DF6D55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B45D2A12A65BF7600DF6D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B45D2A42A65BF7600DF6D55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B47E3842A68272200C0B0B5 /* Emergency Medicine Location View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emergency Medicine Location View.swift"; sourceTree = "<group>"; };
+		3B47E3862A68273900C0B0B5 /* Anaphylaxis Procedure View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anaphylaxis Procedure View.swift"; sourceTree = "<group>"; };
+		3B47E3882A68274F00C0B0B5 /* Asthma Attack Procedure View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asthma Attack Procedure View.swift"; sourceTree = "<group>"; };
+		3B47E38A2A68275B00C0B0B5 /* Virus Information View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Virus Information View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				3B45D29D2A65BF7200DF6D55 /* WellnessWizardApp.swift */,
 				3B45D29F2A65BF7200DF6D55 /* ContentView.swift */,
+				3B47E3842A68272200C0B0B5 /* Emergency Medicine Location View.swift */,
+				3B47E3862A68273900C0B0B5 /* Anaphylaxis Procedure View.swift */,
+				3B47E3882A68274F00C0B0B5 /* Asthma Attack Procedure View.swift */,
+				3B47E38A2A68275B00C0B0B5 /* Virus Information View.swift */,
 				3B45D2A12A65BF7600DF6D55 /* Assets.xcassets */,
 				3B45D2A32A65BF7600DF6D55 /* Preview Content */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B47E3892A68274F00C0B0B5 /* Asthma Attack Procedure View.swift in Sources */,
 				3B45D2A02A65BF7200DF6D55 /* ContentView.swift in Sources */,
+				3B47E3852A68272200C0B0B5 /* Emergency Medicine Location View.swift in Sources */,
+				3B47E38B2A68275B00C0B0B5 /* Virus Information View.swift in Sources */,
+				3B47E3872A68273900C0B0B5 /* Anaphylaxis Procedure View.swift in Sources */,
 				3B45D29E2A65BF7200DF6D55 /* WellnessWizardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
