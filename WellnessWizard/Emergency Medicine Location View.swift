@@ -9,7 +9,41 @@ import SwiftUI
 
 struct Emergency_Medicine_Location_View: View {
     var body: some View {
-        Text("Emergency Medicines")
+        ZStack {
+            Color(hue: 0.531, saturation: 0.241, brightness: 0.938)
+                .ignoresSafeArea()
+            VStack {
+                HStack{
+                    Image("Wellness Wizard Icon")
+                        .resizable()
+                        .frame(width:70, height:70)
+                    
+                    Text("Wellness Wizard")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(hue: 0.569, saturation: 0.757, brightness: 0.709))
+                        .padding()
+                    
+                }
+                Text("Storage Locations for Emergency Medication")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(hue: 0.562, saturation: 0.664, brightness: 0.586))
+                    .font(.system(size: 33))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+                
+                Spacer()
+                
+                Text("Are you required to carry medications for your allergies?")
+                    .fontWeight(.semibold)
+                    .font(.body)
+                    .multilineTextAlignment(.leading)
+                    .font(.system(size: 20))
+                
+                
+                
+            }
+        }
     }
 }
 
