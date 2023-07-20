@@ -21,6 +21,8 @@
 		3B47E38B2A68275B00C0B0B5 /* Virus Information View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47E38A2A68275B00C0B0B5 /* Virus Information View.swift */; };
 		3BC75BC22A699DC400329669 /* yes1Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC75BC12A699DC400329669 /* yes1Medicine.swift */; };
 		3BC75BC42A699DD400329669 /* no1Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC75BC32A699DD400329669 /* no1Medicine.swift */; };
+		3BC75BCA2A69B8BE00329669 /* Allergy Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC75BC92A69B8BE00329669 /* Allergy Location.swift */; };
+		3BC75BCC2A69B8D400329669 /* Asthma Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC75BCB2A69B8D400329669 /* Asthma Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		3B47E38A2A68275B00C0B0B5 /* Virus Information View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Virus Information View.swift"; sourceTree = "<group>"; };
 		3BC75BC12A699DC400329669 /* yes1Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yes1Medicine.swift; sourceTree = "<group>"; };
 		3BC75BC32A699DD400329669 /* no1Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = no1Medicine.swift; sourceTree = "<group>"; };
+		3BC75BC92A69B8BE00329669 /* Allergy Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Allergy Location.swift"; sourceTree = "<group>"; };
+		3BC75BCB2A69B8D400329669 /* Asthma Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asthma Location.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				3B45D29D2A65BF7200DF6D55 /* WellnessWizardApp.swift */,
 				3B45D29F2A65BF7200DF6D55 /* ContentView.swift */,
 				3B47E3842A68272200C0B0B5 /* Emergency Medicine Location View.swift */,
+				3BC75BC92A69B8BE00329669 /* Allergy Location.swift */,
+				3BC75BCB2A69B8D400329669 /* Asthma Location.swift */,
 				3B47E3862A68273900C0B0B5 /* Anaphylaxis Procedure View.swift */,
 				226BD1582A686646000D9628 /* yesMedicine.swift */,
 				226BD15A2A686653000D9628 /* noMedicine.swift */,
@@ -176,9 +182,11 @@
 				3BC75BC22A699DC400329669 /* yes1Medicine.swift in Sources */,
 				226BD1592A686646000D9628 /* yesMedicine.swift in Sources */,
 				3B47E3872A68273900C0B0B5 /* Anaphylaxis Procedure View.swift in Sources */,
+				3BC75BCA2A69B8BE00329669 /* Allergy Location.swift in Sources */,
 				226BD15B2A686653000D9628 /* noMedicine.swift in Sources */,
 				226C0D762A69B0680014D414 /* preventAsthma.swift in Sources */,
 				3B45D29E2A65BF7200DF6D55 /* WellnessWizardApp.swift in Sources */,
+				3BC75BCC2A69B8D400329669 /* Asthma Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
