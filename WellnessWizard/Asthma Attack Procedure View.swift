@@ -39,16 +39,20 @@ struct Asthma_Attack_Procedure_View: View {
             Text("Procedure During an Asthma Attack")
               .font(.title2)
               .fontWeight(.semibold)
+              .padding(.bottom, 125.0)
               
-            Spacer()
-            Spacer()
+              
+            //Spacer()
+            //Spacer()
               
             //Medicine sorting
-            Text("Do you currently have access to medicine?")
+            
+            Text("Do you currently have access \n to medicine?")
             /* .font(.title3)
              .fontWeight(.semibold)
              .padding()
              .multilineTextAlignment(.center)*/
+
               .font(.title3)
               .fontWeight(.semibold)
               .foregroundColor(.black)
@@ -57,8 +61,7 @@ struct Asthma_Attack_Procedure_View: View {
               .overlay(
                 RoundedRectangle(cornerRadius: 20)
                   .stroke(Color(hue: 0.947, saturation: 0.943, brightness: 0.977), lineWidth: 5))
-              .padding()
-              
+              .padding(.horizontal, 65)
             HStack {
               NavigationLink(destination: yes1Medicine()) {
                 Text("YES")
@@ -79,11 +82,10 @@ struct Asthma_Attack_Procedure_View: View {
               }
             }
               
-            Spacer()
+            //Spacer()
               .controlSize(/*@START_MENU_TOKEN@*/.small/*@END_MENU_TOKEN@*/)
               
-            Text("\n\n\n\n")
-              
+            Text("\n\n\n\n\n")
             Text("Symptoms to look out for:")
               .font(.title3)
               .fontWeight(.semibold)
@@ -94,13 +96,16 @@ struct Asthma_Attack_Procedure_View: View {
                   .multilineTextAlignment(.center)
                   .padding(40)
                   
+                  
               }
             }
+              
+              Spacer()
           }
         }
       }
-      .frame(width: nil)
-      .controlSize(/*@START_MENU_TOKEN@*/.regular/*@END_MENU_TOKEN@*/)
+     // .frame(width: nil)
+    //.controlSize(/*@START_MENU_TOKEN@*/.regular/*@END_MENU_TOKEN@*/)
     }
   }
 
