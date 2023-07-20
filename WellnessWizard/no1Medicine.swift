@@ -40,7 +40,7 @@ struct no1Medicine: View {
         Text("1. Sit up and try to keep calm\n 2.Focus on your breathing.\n 3. Stay away from triggers\n 4.Eat some honey. The honey will get rid of the phlem in your throat, which will allow you to breathe better.\n 5.Drink caffeine( soda, coffee, tea etc.). Caffeine can help open your airways.\n 6. Rub warmed up mustard oil on your chest from mustard seeds can help open your passageways\n7.If none of these suggestions provide relief and you can't find an inhaler, call your doctor.")
           .multilineTextAlignment(.center)
           .padding(.horizontal, 65.0)
-        Text("NONE OF THESE SUGGESSTIONS ARE HERE TO REPLACE AN ASTHMA PLAN")
+        Text("NONE OF THESE SUGGESTIONS ARE HERE TO REPLACE AN ASTHMA PLAN")
           .foregroundColor(Color.red)
           .multilineTextAlignment(.center)
           .padding(.horizontal, 65)

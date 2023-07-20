@@ -8,26 +8,7 @@
 import SwiftUI
 
 struct Emergency_Medicine_Location_View: View {
-    //Variables for allergy Qs
-    /*
-     @State private var noAllergyMeds = ""
-     
-     @State private var isButtonClickedYes = false
-     @State private var isButtonClickedNo = false
-     
-     @State private var allergyMedLocation = ""
-     
-     @State private var hasAllergyMeds = false
-     
-     //Variables for asthma Qs
-     @State private var noAsthmaMeds = ""
-     
-     @State private var isButtonClickedYes2 = false
-     @State private var isButtonClickedNo2 = false
-     
-     @State private var asthmaMedLocation = ""
-     @State private var hasAsthmaMeds = false
-     */
+
     var body: some View {
         NavigationStack {
         ZStack {

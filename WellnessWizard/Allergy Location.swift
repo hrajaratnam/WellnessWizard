@@ -1,5 +1,5 @@
 //
-//  Asthma Location.swift
+//  Allergy Location.swift
 //  WellnessWizard
 //
 //  Created by Helena Rajaratnam on 20/07/2023.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct Asthma_Location: View {
+struct Allergy_Location: View {
+    @State private var noAllergyMeds = ""
     
-    @State private var noAsthmaMeds = ""
+    @State private var isButtonClickedYes = false
+    @State private var isButtonClickedNo = false
     
-    @State private var isButtonClickedYes2 = false
-    @State private var isButtonClickedNo2 = false
+    @State private var allergyMedLocation = ""
     
-    @State private var asthmaMedLocation = ""
-    @State private var hasAsthmaMeds = false
+    @State private var hasAllergyMeds = false
     
     var body: some View {
         NavigationStack {
@@ -38,7 +38,7 @@ struct Asthma_Location: View {
                     }
                     Spacer()
                     
-                    Text("Are you required to carry any medication for your asthma?")
+                    Text("Are you required to carry any medications for your allergies?")
                         .fontWeight(.semibold)
                         .font(.body)
                         .multilineTextAlignment(.leading)
@@ -48,10 +48,10 @@ struct Asthma_Location: View {
                     HStack {
                         
                         Button("Yes") {
-                            isButtonClickedYes2 = true
-                            isButtonClickedNo2 = false
+                            isButtonClickedYes = true
+                            isButtonClickedNo = false
                             
-                            hasAsthmaMeds = true
+                            hasAllergyMeds = true
                         }
                         .padding(.horizontal)
                         .font(.title3)
@@ -60,11 +60,11 @@ struct Asthma_Location: View {
                         .padding(.vertical)
                         
                         Button("No") {
-                            isButtonClickedNo2 = true
-                            isButtonClickedYes2 = false
+                            isButtonClickedNo = true
+                            isButtonClickedYes = false
                             
-                            if isButtonClickedNo2 == true && isButtonClickedYes2 == false {
-                                noAsthmaMeds = "This question does not apply to you."
+                            if isButtonClickedNo == true && isButtonClickedYes == false {
+                                noAllergyMeds = "This question does not apply to you."
                             }
                         }
                         .padding(.horizontal)
@@ -75,23 +75,23 @@ struct Asthma_Location: View {
                         
                     }
                     
-                    if isButtonClickedYes2 == true && isButtonClickedNo2 == false {
+                    if isButtonClickedYes == true && isButtonClickedNo == false {
                         
-                        TextField("Please input the location of your medication.", text: $asthmaMedLocation)
+                        TextField("Please input the location of your medication.", text: $allergyMedLocation)
                             .padding()
                             .padding(.horizontal)
                             .border(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                             .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                     }
-                    if isButtonClickedNo2 {
-                        Text(noAsthmaMeds)
+                    if isButtonClickedNo {
+                        Text(noAllergyMeds)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.blue)
                             .padding(.horizontal)
                     }
                     
-                    if asthmaMedLocation != "" {
-                        Text("Asthma medications are stored: \(asthmaMedLocation)")
+                    if allergyMedLocation != "" {
+                        Text("Allergy medications are stored: \(allergyMedLocation)")
                             .font(.system(size: 20))
                             .padding(.horizontal)
                     }
@@ -105,20 +105,22 @@ struct Asthma_Location: View {
                     
                     
                     Group {
-                        NavigationLink(destination: Allergy_Location()) {
-                            Text("Location of Allergy Medication") }
+                        NavigationLink(destination: Asthma_Location()) {
+                            Text("Location of Asthma Medication")
+                        }
                         
                         NavigationLink(destination: ContentView()) {
-                            Text("Home Page") }
+                            Text("Home Page")
+                        }
                     }
-                    
                 }
             }
         }
     }
 }
-struct Asthma_Location_Previews: PreviewProvider {
+
+struct Allergy_Location_Previews: PreviewProvider {
     static var previews: some View {
-        Asthma_Location()
+        Allergy_Location()
     }
 }
