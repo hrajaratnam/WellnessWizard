@@ -10,6 +10,8 @@ import SwiftUI
 struct Emergency_Medicine_Location_View: View {
     
     @State private var noAllergyMeds = ""
+    @State private var isButtonClickedYes = false
+    @State private var allergyMedLocation = ""
     
     var body: some View {
         ZStack {
@@ -44,7 +46,7 @@ struct Emergency_Medicine_Location_View: View {
                 HStack {
                     
                     Button("Yes") {
-                        
+                        isButtonClickedYes = true
                     }
                     .padding(.horizontal)
                     .font(.title3)
@@ -53,22 +55,30 @@ struct Emergency_Medicine_Location_View: View {
                     .padding(.vertical)
                     
                     Button("No") {
-                        noAllergyMeds = "This question does not apply - you can move to the next question."
+                        
+                       noAllergyMeds = "This question does not apply - you can move to the next question."
+                        
                     }
                     .padding(.horizontal)
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
                     .tint(.blue)
                     .padding(.vertical)
-
-                    
-                    
-                    
+   
                 }
                 
+                if isButtonClickedYes == true {
+                    
+                    TextField("Please input the location of your medication.", text: $allergyMedLocation)
+                        .padding(.trailing)
+                        .padding(.leading)
+                    
+                
+                }
+
+                Text(noAllergyMeds)
+                    .padding(.horizontal)
                 Spacer()
-                
-                
             }
         }
     }

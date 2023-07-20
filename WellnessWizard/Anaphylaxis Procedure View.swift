@@ -19,7 +19,7 @@ struct Anaphylaxis_Procedure_View: View {
                 VStack {
                     HStack{
                         //heading
-                        Image("wizardIcon")
+                        Image("Wellness Wizard Icon")
                             .resizable()
                             .frame(width:70, height:70)
                         Text("Wellness Wizard")
