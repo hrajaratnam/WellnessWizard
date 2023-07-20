@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Emergency_Medicine_Location_View: View {
+    
+    @State private var noAllergyMeds = ""
+    
     var body: some View {
         ZStack {
             Color(hue: 0.531, saturation: 0.241, brightness: 0.938)
@@ -30,16 +33,40 @@ struct Emergency_Medicine_Location_View: View {
                     .foregroundColor(Color(hue: 0.562, saturation: 0.664, brightness: 0.586))
                     .font(.system(size: 33))
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-                
-                Spacer()
+                    .padding(.all)
                 
                 Text("Are you required to carry medications for your allergies?")
                     .fontWeight(.semibold)
                     .font(.body)
                     .multilineTextAlignment(.leading)
-                    .font(.system(size: 20))
+                    .font(.system(size: 22))
                 
+                HStack {
+                    
+                    Button("Yes") {
+                        
+                    }
+                    .padding(.horizontal)
+                    .font(.title3)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.blue)
+                    .padding(.vertical)
+                    
+                    Button("No") {
+                        noAllergyMeds = "This question does not apply - you can move to the next question."
+                    }
+                    .padding(.horizontal)
+                    .font(.title3)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.blue)
+                    .padding(.vertical)
+
+                    
+                    
+                    
+                }
+                
+                Spacer()
                 
                 
             }
