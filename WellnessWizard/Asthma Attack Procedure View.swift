@@ -47,7 +47,7 @@ struct Asthma_Attack_Procedure_View: View {
               
             //Medicine sorting
             
-            Text("Do you currently have access \n to medicine?")
+            Text("Do you have medicine?")
             /* .font(.title3)
              .fontWeight(.semibold)
              .padding()
